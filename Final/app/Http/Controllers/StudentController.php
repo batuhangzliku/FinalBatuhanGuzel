@@ -8,12 +8,12 @@ use Illuminate\Http\Request;
 class StudentController extends Controller
 {
     
-function Save()
+ public function  Save()
 {
     return view('studentsave');
 }
 
-function save(Request $request)
+function saveInformation(Request $request)
 {
    
     $request->validate([

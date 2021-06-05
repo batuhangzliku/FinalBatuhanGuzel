@@ -14,9 +14,7 @@
         <div class="row" style="margin-top: 45px;">
             <div class="col-md-4 offset-md-4">
                 <h4>Student Save</h4>
-                <form action="" method="post">
-                    <form action="" method="post">
-
+                <form action="{{ route('saveInformation') }}" method="post">
                         @csrf
                         <div class="form-group">
                             <label for="name">Student Name</label>
@@ -24,16 +22,17 @@
 
                         </div>
                         <div class="form-group">
-                            <label for="surname">E-mail</label>
+                            <label for="surname">Student surname</label>
                             <input type="text" class="form-control" name="surname" placeholder="Enter surname">
                         </div>
                         <div class="form-group">
-                            <label for="department">Password</label>
+                            <label for="department">Department name</label>
                             <input type="text" class="form-control" name="department" placeholder="Enter department name">
                            
                         </div>
                         
                         <br>
+                        <button type="submit" class="btn btn-block btn-info">Save</button>
                        
                     </form>
             </div>
